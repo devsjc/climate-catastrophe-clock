@@ -6,6 +6,6 @@ We are not on the brink of a climate crisis. We are past the brink.
 
 ---
 
-http://devsjc.github.io/climatecatastropheclock
+http://devsjc.github.io/climate-catastrophe-clock
 
 ---
