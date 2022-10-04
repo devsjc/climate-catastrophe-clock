@@ -1,0 +1,107 @@
+@font-face {
+
+}
+
+body {
+    background-color: #2D2D2D;
+    font-family: "Libre Franklin";
+}
+
+.r-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    box-sizing: border-box;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.l-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    box-sizing: border-box;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1.5fr 0.5fr 1fr;
+    grid-template-rows: 0.4fr 0.3fr 1.8fr 3fr 1fr 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header header header"
+    "top-padding top-padding top-padding"
+    "c1-value c1-value c1-space"
+    "c1-desc c1-desc pb-display"
+    "c2-value c2-desc c2-desc"
+    "c3-value c3-desc c3-desc"
+    "bottom-padding bottom-padding bottom-padding";
+}
+
+.header {
+    grid-area: header;
+    color: #4D4D4D;
+    text-align: center;
+}
+
+.top-padding { grid-area: top-padding; }
+
+.bottom-padding { grid-area: bottom-padding; }
+
+.c1-value {
+    grid-area: c1-value;
+    color: #D54A31;
+    font-weight: bold;
+    font-size: 10vw;
+}
+
+.c1-space { grid-area: c1-space; }
+
+.c1-desc {
+    grid-area: c1-desc;
+    color: #A4A4A4;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.pb-display {
+    grid-area: pb-display;
+    min-width: 0;
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.c2-value {
+    grid-area: c2-value;
+    color: #DB7272;
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+.c2-desc {
+    grid-area: c2-desc;
+    color: #A4A4A4;
+    font-size: 3vw;
+}
+
+.c3-value {
+    grid-area: c3-value;
+    color: #D54A31;
+    font-weight: bold;
+    font-size: 5vw;
+}
+
+.c3-desc {
+    grid-area: c3-desc;
+    color: #A4A4A4;
+    font-size: 3vw;
+}

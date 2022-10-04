@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Climate Doomsday Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="graph.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">climate catastrophe clock</div>
+    <div class="top-padding"></div>
+    <div class="bottom-padding"></div>
+    <div class="c1-value r-align" id="c1-value">6,299 days</div>
+    <div class="c1-desc">until irreversible global heating</div>
+    <div class="pb-display">
+        <canvas id="chart"></canvas>
+    </div>
+    <div class="c2-value r-align" id="c2-value"></div>
+    <div class="c2-desc l-align">to limit warming to 1.5°C</div>
+    <div class="c3-value r-align">2.9°C </div>
+    <div class="c3-desc l-align">current projected warming </div>
+</div>
+</body>
+</html>
